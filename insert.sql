@@ -112,13 +112,7 @@ INSERT INTO Vmoran.clientes VALUES (100,'0100000100','Andrea','Morales','0991110
 
 
 
-
-
-
-
-
-
-
+---vmoran.empleados
 --INSERT
 INSERT INTO Vmoran.empleados (id_empleado, identificacion, nombres, apellidos, especialidad, telefono, email) VALUES (1,'0200000001','Juan','Pérez','Administrador','0982000001','juan.perez1@empresa.com');
 INSERT INTO Vmoran.empleados (id_empleado, identificacion, nombres, apellidos, especialidad, telefono, email) VALUES (2,'0200000002','María','Gómez','Contadora','0982000002','maria.gomez2@empresa.com');
@@ -231,15 +225,7 @@ INSERT INTO Vmoran.empleados (id_empleado, identificacion, nombres, apellidos, e
 INSERT INTO Vmoran.empleados (id_empleado, identificacion, nombres, apellidos, especialidad, telefono, email) VALUES (100,'0200000100','Vanessa','Molina','Administrador','0982000100','vanessa.molina100@empresa.com');
 
 
-
-
-
-
-
-
-
-
-
+---SERVICIOS
 INSERT INTO Vmoran.servicios (nombre, descripcion, duracion_minutos, precio) VALUES
 ('Corte de cabello básico','Corte tradicional',30,8.00),
 ('Corte de cabello premium','Corte con lavado',45,12.00),
@@ -345,18 +331,7 @@ INSERT INTO Vmoran.servicios (nombre, descripcion, duracion_minutos, precio) VAL
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+---CITAS
 INSERT INTO Vmoran.citas (id_cita, id_cliente, id_empleado, fecha, hora, estado) VALUES
 (1,1,1,'2025-01-02','09:00','Programada');
 INSERT INTO Vmoran.citas VALUES (2,2,2,'2025-01-02','09:30','Atendida');
@@ -471,126 +446,7 @@ INSERT INTO Vmoran.citas VALUES (100,100,100,'2025-01-11','13:30','Programada');
 
 
 
-
-
-INSERT INTO Vmoran.detalle_cita (id_cita, id_servicio, precio_aplicado) VALUES
-(1,1,8.00),
-(2,2,12.00),
-(3,3,9.00),
-(4,4,14.00),
-(5,5,6.00),
-(6,6,5.00),
-(7,7,7.00),
-(8,8,15.00),
-(9,9,90.00),
-(10,10,85.00),
-
-(11,11,22.00),
-(12,12,30.00),
-(13,13,25.00),
-(14,14,40.00),
-(15,15,55.00),
-(16,16,80.00),
-(17,17,6.00),
-(18,18,12.00),
-(19,19,7.00),
-(20,20,15.00),
-
-(21,21,10.00),
-(22,22,14.00),
-(23,23,20.00),
-(24,24,12.00),
-(25,25,25.00),
-(26,26,35.00),
-(27,27,30.00),
-(28,28,5.00),
-(29,29,10.00),
-(30,30,18.00),
-
-(31,31,22.00),
-(32,32,18.00),
-(33,33,30.00),
-(34,34,28.00),
-(35,35,25.00),
-(36,36,40.00),
-(37,37,12.00),
-(38,38,15.00),
-(39,39,4.00),
-(40,40,3.00),
-
-(41,41,6.00),
-(42,42,15.00),
-(43,43,18.00),
-(44,44,20.00),
-(45,45,10.00),
-(46,46,30.00),
-(47,47,35.00),
-(48,48,40.00),
-(49,49,45.00),
-(50,50,38.00),
-
-(51,51,42.00),
-(52,52,40.00),
-(53,53,28.00),
-(54,54,45.00),
-(55,55,25.00),
-(56,56,35.00),
-(57,57,70.00),
-(58,58,55.00),
-(59,59,40.00),
-(60,60,45.00),
-
-(61,61,35.00),
-(62,62,50.00),
-(63,63,90.00),
-(64,64,15.00),
-(65,65,18.00),
-(66,66,6.00),
-(67,67,8.00),
-(68,68,6.00),
-(69,69,15.00),
-(70,70,5.00),
-
-(71,71,90.00),
-(72,72,5.00),
-(73,73,45.00),
-(74,74,30.00),
-(75,75,20.00),
-(76,76,25.00),
-(77,77,50.00),
-(78,78,55.00),
-(79,79,60.00),
-(80,80,65.00),
-
-(81,81,45.00),
-(82,82,65.00),
-(83,83,40.00),
-(84,84,42.00),
-(85,85,38.00),
-(86,86,40.00),
-(87,87,32.00),
-(88,88,45.00),
-(89,89,28.00),
-(90,90,95.00),
-
-(91,91,80.00),
-(92,92,75.00),
-(93,93,50.00),
-(94,94,6.00),
-(95,95,12.00),
-(96,96,7.00),
-(97,97,15.00),
-(98,98,4.00),
-(99,99,3.00),
-(100,100,5.00);
-
-
-
-
-
-
-
-
+---PAGOS
 INSERT INTO Vmoran.pagos (id_cita, metodo_pago, monto) VALUES
 (1,'Efectivo',15.00),
 (2,'Tarjeta',25.00),
@@ -701,4 +557,3 @@ INSERT INTO Vmoran.pagos (id_cita, metodo_pago, monto) VALUES
 (98,'Tarjeta',32.00),
 (99,'Efectivo',28.00),
 (100,'Tarjeta',40.00);
-
