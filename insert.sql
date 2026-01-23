@@ -557,3 +557,5 @@ INSERT INTO Vmoran.pagos (id_cita, metodo_pago, monto) VALUES
 (98,'Tarjeta',32.00),
 (99,'Efectivo',28.00),
 (100,'Tarjeta',40.00);
+
+
